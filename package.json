@@ -5,6 +5,6 @@
   },
   "scripts": {
     "dev": "tailwindcss -i tailwindcss/tailwind.css -o css/style.css --watch",
-    "build": "tailwindcss -o css/style.css -minify"
+    "build": "tailwindcss -o css/style.css --minify"
   }
 }
