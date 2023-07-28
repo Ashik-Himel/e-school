@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h3 {
+    @apply font-medium text-xl text-title;
+  }
+}
+@layer components {
+  .btn-primary {
+    @apply text-white rounded-3xl normal-case text-base font-normal;
+  }
+}

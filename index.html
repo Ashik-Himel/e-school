@@ -4,10 +4,110 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-School</title>
+  <link rel="shortcut icon" href="./images/icons/book.png" type="image/x-icon">
+  <!-- Fontawesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-  <h1>Hello</h1>
+<body class="font-poppins font-normal text-normal-text">
+  <header class="bg-hero-bg">
+    <!-- Nav Section -->
+    <nav>
+      <div class="container">
+        <div class="drawer">
+          <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
+          <div class="drawer-content flex flex-col">
+            <!-- Navbar -->
+            <div class="w-full navbar">
+              <div class="flex-1 px-2 mx-2">
+                <a href="#home">
+                  <img src="./images/icons/logo.png" alt="Site Logo" class="max-w-[130px]">
+                </a>
+              </div>
+              <div class="flex-none md:hidden">
+                <label for="my-drawer-3" class="btn btn-square btn-ghost">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </label>
+              </div> 
+              <div class="flex-none hidden md:block">
+                <ul class="menu menu-horizontal items-center text-base">
+                  <!-- Navbar menu content here -->
+                  <li><a href="#books" class="text-black">Books</a></li>
+                  <li><a href="#courses" class="text-black">Courses</a></li>
+                  <li><a href="#others" class="text-black">Others</a></li>
+                  <li><a href="#blog" class="text-black">Blog</a></li>
+                  <li><a href="#sign-in" class="btn btn-primary h-auto min-h-full w-max py-2 px-6">Sign in</a></li>
+                </ul>
+              </div>
+            </div>
+          </div> 
+          <div class="drawer-side">
+            <label for="my-drawer-3" class="drawer-overlay"></label> 
+            <ul class="menu p-4 w-[80%] max-w-[380px] h-full bg-base-200 text-base justify-center items-center gap-2">
+              <!-- Sidebar content here -->
+              <li><a href="#books" class="text-black">Books</a></li>
+              <li><a href="#courses" class="text-black">Courses</a></li>
+              <li><a href="#others" class="text-black">Others</a></li>
+              <li><a href="#blog" class="text-black">Blog</a></li>
+              <li class="mt-2"><a href="#sign-in" class="btn btn-primary h-auto min-h-full w-max py-2 px-6">Sign in</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="py-8 lg:py-16">
+      <div class="container">
+        <div class="hero">
+          <div class="hero-content flex-col md:flex-row-reverse gap-8 justify-between w-full">
+            <div class="flex-1">
+              <img src="./images/illustration.png" alt="Banner Image" class="w-full max-w-md block mx-auto" />
+            </div>
+            <div class="flex-1 max-w-[500px]">
+              <span class="text-orange mb-1 block">Are you ready to Learn?</span>
+              <h1 class="text-5xl font-bold text-black leading-[1.2]">Learn With fun on <span class="text-primary">any schedule</span></h1>
+              <p class="py-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius blandit facilisis quam netus.</p>
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!-- Books Section -->
+    <section class="mt-12 lg:mt-20" id="books">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <div class="bg-hero-bg p-8 rounded-lg cursor-pointer hover:-translate-y-[15px] hover:bg-white hover:shadow-lg transition-transform duration-300">
+            <img src="./images/icons/book.png" alt="Book" class="block mb-6 max-w-[60px] mx-auto">
+            <h3>1500+ Topic</h3>
+            <p>Learn Anythings</p>
+          </div>
+          <div class="bg-hero-bg p-8 rounded-lg cursor-pointer hover:-translate-y-[15px] hover:bg-white hover:shadow-lg transition-transform duration-300">
+            <img src="./images/icons/student.png" alt="Notebook" class="block mb-6 max-w-[60px] mx-auto">
+            <h3>1800+ Students</h3>
+            <p>Learn Anythings</p>
+          </div>
+          <div class="bg-hero-bg p-8 rounded-lg cursor-pointer hover:-translate-y-[15px] hover:bg-white hover:shadow-lg transition-transform duration-300">
+            <img src="./images/icons/test.png" alt="Book" class="block mb-6 max-w-[60px] mx-auto">
+            <h3>9K+ Test Token</h3>
+            <p>Learn Anythings</p>
+          </div>
+          <div class="bg-hero-bg p-8 rounded-lg cursor-pointer hover:-translate-y-[15px] hover:bg-white hover:shadow-lg transition-transform duration-300">
+            <img src="./images/icons/students.png" alt="Book" class="block mb-6 max-w-[60px] mx-auto">
+            <h3>2000+ Student</h3>
+            <p>Learn Anythings</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
