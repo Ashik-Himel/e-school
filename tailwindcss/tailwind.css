@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  h2 {
+    @apply font-bold text-3xl text-title mb-6 text-center;
+  }
   h3 {
     @apply font-medium text-xl text-title;
   }
